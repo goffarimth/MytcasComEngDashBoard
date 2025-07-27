@@ -3,4 +3,3 @@ plotly
 pandas 
 openpyxl
 playwright
-playwright install
