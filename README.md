@@ -25,3 +25,27 @@ MytcasComEngDashBoard/
 │   └── app.py           # Streamlit web app สำหรับแสดงผล Dashboard
 ├── requirements.txt     # รายการ dependency ที่ใช้
 └── README.md
+
+🚀 วิธีติดตั้งและใช้งาน
+1. Clone โปรเจกต์
+```bash
+git clone https://github.com/goffarimth/MytcasComEngDashBoard.git
+cd MytcasComEngDashBoard
+```
+2. สร้าง Virtual Environment และติดตั้งไลบรารี
+```bash
+python -m venv venv
+source venv/bin/activate  # หรือ venv\Scripts\activate บน Windows
+pip install -r requirements.txt
+```
+3. ดึงข้อมูลจากเว็บไซต์ (Scraping)
+```bash
+python extractor.py
+```
+💡 หมายเหตุ: การใช้งาน playwright ครั้งแรก อาจต้องติดตั้ง browser dependencies เพิ่มเติมด้วยคำสั่ง
+playwright install
+
+4. รัน Dashboard
+```bash
+streamlit run app.py
+```
